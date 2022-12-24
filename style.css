@@ -1,0 +1,338 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Poppins:wght@300;400;600;700&family=Quicksand:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+html::-webkit-scrollbar {
+    display: none;
+  }
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(92, 67, 55, 0.096), transparent),
+    url(İmages/İmagee.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 0 8%;
+  position: relative;
+}
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 20px 0;
+}
+.logo {
+    width: 40px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    
+}
+.me {
+    margin-left: 4px;
+}
+nav .a {
+    font-size: 50px;
+    position: relative;
+    animation-name: spin;
+  animation-duration: 5000ms;
+  animation-timing-function: linear; 
+    
+}
+@keyframes spin {
+    0% {
+        transform:rotate(0deg);
+    }
+    50% {
+        transform:rotate(90deg);
+    }
+    75%{
+        transform: rotate(90deg);
+    }
+    100% { 
+        transform: rotate(-90%);
+
+    }
+  
+}
+.cart-icon {
+    width: 30px;
+    cursor: pointer;
+}
+nav ul {
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff; 
+    transition: width 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 50%;
+}
+
+.text-box {
+    color: #fff;
+    position: absolute;
+    bottom: 8%;
+}
+.text-box p {
+    font-size: 50px;
+    font-weight: 600;
+}
+.text-box h1 {
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(İmages/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: onur 20s linear infinite;
+}
+@keyframes onur {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+.text-box h3 {
+    font-size: 40px;
+    font-weight: 500;
+}
+.text-box .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.text-box .but {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.text-box .but:hover {
+    background-color: rgba(114, 7, 7, 0.46);
+}
+.text-box a span {
+    font-size: 30px;
+    line-height: 15px;
+    margin-left: 5px;
+    margin-bottom: 6px;
+}
+.social-icons {
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+}
+.social-icons i {
+    display: grid;
+    margin: 50px 20px;
+    color: #fff;
+}
+.text-box a i {
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.container .footer1 .scroll {
+    height: 60px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 1100px;
+    
+}
+.container .footer1 .scroll a {
+   color: #fff;
+}
+.main {
+    width: 100%;
+    height: 1450px;
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main .aboutMySelf {
+    
+    width: 1400px;
+    height: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 40px;
+}
+.main .myPhoto img {
+    height: 1000px;
+    width: 600px;
+    opacity: 1;
+}
+
+.main .aboutMySelf .achievement {
+    
+    width: 600px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main .aboutMySelf .achievement .ben {
+    margin-left: 10px;
+}
+.main .aboutMySelf .achievement h2{
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffff;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+.main .aboutMySelf .achievement h5 {
+    margin: 0px 0px;
+    font-size: 20px;
+    color: #ffff;
+    letter-spacing: 3px;
+}
+.main .aboutMySelf .achievement p {
+
+    margin: 40px 0;
+    line-height: 30px;
+    color: #ffff;
+}
+.main .aboutMySelf .achievement .ben span {
+    color: #f9004d;
+}
+
+button {
+    background-color: #f9004d;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: all .5s ease;
+
+
+}
+
+button:hover {
+    background-color: transparent;
+    
+    border: 2px solid #f9004d;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .main .footer2 .scroll2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 1000px;
+    width: 100%;
+    
+}
+.main .footer2 .scroll2 a {
+    color: #fff;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact {
+    width: 100%;
+    height: 1300px;
+    background-color: rgb(36, 0, 75);
+}
